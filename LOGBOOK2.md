@@ -1,9 +1,10 @@
-
 # Trabalho realizado nas Semanas #2 e #3
+
+# **CVE-2021-34523**
 
 ## Identification
 
-- Three CVEs (CVE-2021-31207, CVE-2021-34523, and CVE-2021-34473) impact Microsoft Exchange Server, collectively posing a severe threat.
+- Three CVEs (CVE-2021-31207, **CVE-2021-34523**, and CVE-2021-34473) impact Microsoft Exchange Server, collectively posing a severe threat.
 - These vulnerabilities enable an attacker to achieve Remote Code Execution (RCE) by circumventing authentication mechanisms.
 - Affected Systems:
     - Microsoft Exchange Server 2013
