@@ -11,7 +11,9 @@
 
 ## Task 2
 - Step 1:
+
 ![Fig 2_1](./imgs/task2_1.png)
+
 _Program_
 
 ![Fig 2_2](./imgs/task2_2.png)
@@ -19,7 +21,9 @@ _Program_
 ![Fig 2_3](./imgs/task2_3.png)
 
 - Step 2:
+
 ![Fig 2_4](./imgs/task2_4.png)
+
 _Changed program_
 
 ![Fig 2_5](./imgs/task2_5.png)
@@ -32,11 +36,15 @@ _Conclusion:_ When a fork() is made in a program, the child and the parent proce
 
 ## Task 3
 - Step 1:
+
 ![Fig 3_1](./imgs/task3_1.png)
+
 _Program_
+
 ![Fig 3_2](./imgs/task3_2.png)
 
 - Step 2:
+
 ![Fig 3_3](./imgs/task3_3.png)
 
 ![Fig 3_4](./imgs/task3_4.png)
@@ -47,7 +55,9 @@ _Conclusion:_
 
 
 ## Task 4
+
 ![Fig 4_1](./imgs/task4_1.png)
+
 _Program_
 
 ![Fig 4_2](./imgs/task4_2.png)
@@ -60,7 +70,9 @@ _Conclusion:_ Both execve() and system() prints on shell the environmental varia
 
 ## Task 5
 - Step 1:
+
 ![Fig 5_1](./imgs/task5_1.png)
+
 _Program_
 
 - Step 2:
