@@ -85,3 +85,14 @@ _Conlusion:_ When we run the child process the environment variable LD_LIBRARY_P
 
 
 ## Task 6
+In the context of a SET-UID program, which runs with the owner's privileges, a user can manipulate the program's Environment Variables (EVs) to their advantage. In the given scenario, there's a program that executes the 'ls' command by invoking the 'system' function. The goal is to trick this program into calling an altered version of 'ls' with higher privileges.
+
+However, there's a challenge: when 'system' is called, it ultimately leads to the execution of '/bin/dash,' a shell that has built-in safeguards. These safeguards reduce the process's permissions to match the user's privileges. To work around this, we need to change the shell program to something else, like '/bin/zsh.'
+
+To facilitate this exploitation, the following steps were taken:
+
+1. The PATH environment variable was extended to include '/home/seed,' giving the system access to this directory.
+
+2. An alternative version of 'ls' was created in the '/home/seed' directory. This custom 'ls' performed an action that's typically restricted to root.
+
+3. The program was then compiled and configured as a SET-UID program, which means it runs with elevated privileges.
