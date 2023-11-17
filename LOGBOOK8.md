@@ -106,4 +106,4 @@ Then if we access the Boby's account with this new password:
 
 ![Fig1](./imgs/LOGBOOK8/10.png)
 
-We conclude thatyIf we apply the method of the last task and use the respective hash function we can change other users password.
+We conclude that if we apply the method of the last task and use the respective hash function we can change other users password.
