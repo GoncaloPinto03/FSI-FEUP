@@ -1,4 +1,3 @@
-
 # CTFWEEK7
 The goal for this week's challenges was to explore format string vulnerabilities and use them to manipulate a program's behavior in order to obtain the flags.
 
@@ -46,7 +45,7 @@ With all this information gathered, the final step involved using a Python scrip
 OBS: Let's also change the port for the remote connection.
 
 This challenge is pratically the same. When we run checksec we can see that there is the same restrictions from the first challenge.
-Desta vez uma bash é lançada se o valor de key for 0xBEEF, ou seja, 48879 em decimal. Esta backdoor é suficiente para controlar o servidor e assim consultar o conteúdo do ficheiro flag.txt.
+This time, a bash is triggered if the value of 'key' is 0xBEEF, which is 48879 in decimal. This backdoor is sufficient to control the server and thereby query the contents of the flag.txt file.
 
 - Q1: In which line of code is the vulnerability found? And what does it allow us to do?
 - A1: The vulnerability can be found on line 25, it's the same vulnerability as in the first challenge. And it pretty much allows us to do the same thing.
@@ -58,7 +57,8 @@ Desta vez uma bash é lançada se o valor de key for 0xBEEF, ou seja, 48879 em d
 - A3: As mentioned in the previous answer, we must jump to the memory address of the `key` variable and change its value to `0xbeef`.
 
 
-Para modificar o valor de 'key', que é uma variável global armazenada na Heap, utilizamos uma técnica de ataque de formato de string por meio da opção '%n' no input. Primeiramente, é necessário obter o valor do endereço da variável 'key', para o qual utilizamos o gdb:
+To modify the value of 'key', a global variable stored in the Heap, we employ a format string attack technique using the '%n' option in the input. Initially, it is necessary to obtain the value of the 'key' variable's address, for which we use gdb:
+
 
 ```
 $ gdb program
