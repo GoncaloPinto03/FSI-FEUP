@@ -1,3 +1,4 @@
+
 # CTFWEEK7
 The goal for this week's challenges was to explore format string vulnerabilities and use them to manipulate a program's behavior in order to obtain the flags.
 
@@ -6,7 +7,7 @@ Initially, we explored the files provided on the CTF platform, which are the sam
 
 Using the checksec command, we determined that the program (compiled main.c) does not have randomized binary, but it has protections for the return address using canaries.
 
-| *Fig. 1 - `checksec program` output.* |
+![Fig1](./imgs/CTFWEEK7/checksec.png)
 
 - Q1: In which line of code is the vulnerability found?
 
@@ -34,11 +35,7 @@ The result was the return address "0x08049256," which is "\x60\xC0\x04\x08" in s
 
 With all this information gathered, the final step involved using a Python script to create a character sequence to be sent to the program, resulting in the display of the flag's contents. The logic behind constructing this sequence is as follows: the first 4 bytes represent the memory address of the flag array, but in reverse order. Then, the placeholder %s is added, allowing the printing of the associated content.
 
-
-| *Fig. 2 - script body for Challenge 1.* |
-
-
-
+![Fig2](./imgs/CTFWEEK7/exploit71.png)
 
 # Format Strings-Challenge 2 : 
 
@@ -70,11 +67,11 @@ $ p &key
 Through scanf, we can manipulate the 'key' variable in the Heap using a '%n' format string attack. To address the issue of '%n' recording the number of characters written, we use '%.Ax' to specify the desired size. The formatted string becomes: address for '%x' + address for '%n' + '%.Ax' + '%n', taking into account the characters occupied by addresses when subtracting from 0xBEEF. Calculating 'A': With a total of 48879 characters needed for 0xBEEF, subtracting the 8 characters already written gives us 'A' as 48871.
 
 
-foto do exploit
+![Fig3](./imgs/CTFWEEK7/script72.png)
 
 
 After running our exploit, if successful, a simple "cat flag.txt" command will yield the desired flag.
 
 
-foto da flag 
 
+![Fig4](./imgs/CTFWEEK7/flag72.png)
