@@ -37,6 +37,10 @@ With all this information gathered, the final step involved using a Python scrip
 
 ![Fig2](./imgs/CTFWEEK7/exploit71.png)
 
+After running the python exploit we received the following flag:
+
+![Fig3](./imgs/CTFWEEK7/flag1.jpeg)
+
 # Format Strings-Challenge 2 : 
 
 OBS: Let's also change the port for the remote connection.
