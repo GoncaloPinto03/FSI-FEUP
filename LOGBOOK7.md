@@ -1,4 +1,4 @@
-# Work from Week 5
+# Work from Week 7
 
 First we ran the command `sudo sysctl -w kernel.randomize_va_space=0` to disable address space randomization, which randomizes memory addresses, making it harder for attackers to guess and exploit them. This can be useful for specific debugging or testing purposes but should be used cautiously, as it can potentially weaken the system's security.
 
