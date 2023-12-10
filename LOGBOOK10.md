@@ -54,13 +54,20 @@ The result of our messenger encryption was:
 
 ## Task 3: Encryption Mode – ECB vs. CBC
 
+Extract the header from the original file
+
 ![Fig 10](./imgs/LOGBOOK10/header.png)
 
 ### ECB
 
-1) ![Fig 11](./imgs/LOGBOOK10/ecb1.png)
-2) ![Fig 12](./imgs/LOGBOOK10/ecb_body.png)
-3) ![Fig 13](./imgs/LOGBOOK10/ecb_final.png)
+1) Encrypt the original picture
+![Fig 11](./imgs/LOGBOOK10/ecb1.png)
+
+2) Extract the body from the encrypted file
+![Fig 12](./imgs/LOGBOOK10/ecb_body.png)
+
+3) Concatenate the files(header e tail)
+![Fig 13](./imgs/LOGBOOK10/ecb_final.png)
 
 |original|final|
 |----|----|
@@ -69,9 +76,14 @@ The result of our messenger encryption was:
 
 ### CBC
 
-1) ![Fig 11](./imgs/LOGBOOK10/cbc1.png)
-2) ![Fig 12](./imgs/LOGBOOK10/cbc_body.png)
-3) ![Fig 13](./imgs/LOGBOOK10/cbc_final.png)
+1) Encrypt the original picture
+![Fig 13](./imgs/LOGBOOK10/cbc1.png)
+
+2) Extract the body from the encrypted file
+![Fig 14](./imgs/LOGBOOK10/cbc_body.png)
+
+3) Concatenate the files(header e tail)
+![Fig 15](./imgs/LOGBOOK10/cbc_final.png)
 
 |original|final|
 |----|----|
