@@ -37,15 +37,19 @@ We can use the following commands to look at the decoded content of the X509 cer
 3. In the RSA algorithm, we have a public exponent e, a private exponent d, a modulus n, and two secret numbers p and q, such that n = pq. Please identify the values for these elements in your certificate and key files.
 
     Public exponent e
+
     ![Fig 6](./imgs/LOGBOOK11/11.png)
 
     Private Exponent d
+
     ![Fig 7](./imgs/LOGBOOK11/5.jpeg)
 
     Modulud n
+
     ![Fig 8](./imgs/LOGBOOK11/6.jpeg)
 
     Two secret numbers p and q
+    
     ![Fig 9](./imgs/LOGBOOK11/7.jpeg)
 
 In conclusion, a Certificate Authority (CA) serves as a reliable entity responsible for issuing digital certificates that validate the association between a public key and its designated owner. The digital certificate essentially confirms the rightful ownership of a public key by the identified subject. It's crucial to note that the certificates issued by Root CAs enjoy unconditional trust, establishing a foundation for secure digital communication.
