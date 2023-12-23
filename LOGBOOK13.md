@@ -91,4 +91,36 @@ FALTA ADICIONAR WIRESHARK IMAGE
 
 The objective of this task is to use Scapy to estimate the distance, in terms of the number of routers, between your VM and a selected destination. This is similar to what the traceroute tool does. In this task, you will write your own tool using Scapy.
 
+
+To do this, we use this code
+
+![Fig6](./imgs/LOGBOOK13/img1.png)
+
+We obtained this result
+
+![Fig7](./imgs/LOGBOOK13/img2.png)
+
+The packet passes through 11 routers until it reaches its destination
+
+
 ## Task 1.4: Sniffing and-then Spoofing
+
+In this task, we need to create a program that, upon detecting an ICMP packet, forwards an ICMP echo response to the source IP address of that packet.
+To do this, we use this code
+
+![Fig8](./imgs/LOGBOOK13/img6.png)
+
+We obtained this result
+
+a) ping 1.2.3.4 
+![Fig9](./imgs/LOGBOOK13/img3.png)
+
+b) ping 10.9.0.99
+![Fig10](./imgs/LOGBOOK13/img4.png)
+
+c)ping 8.8.8.8 
+![Fig11](./imgs/LOGBOOK13/img5.png)
+
+In a) and b) as the hosts do not exist, the program cannot receive the packets. In c) all packets were received
+
+
