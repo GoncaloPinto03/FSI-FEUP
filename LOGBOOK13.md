@@ -113,12 +113,15 @@ To do this, we use this code
 We obtained this result
 
 a) ping 1.2.3.4 
+
 ![Fig9](./imgs/LOGBOOK13/img3.png)
 
 b) ping 10.9.0.99
+
 ![Fig10](./imgs/LOGBOOK13/img4.png)
 
 c)ping 8.8.8.8 
+
 ![Fig11](./imgs/LOGBOOK13/img5.png)
 
 In a) and b) as the hosts do not exist, the program cannot receive the packets. In c) all packets were received
